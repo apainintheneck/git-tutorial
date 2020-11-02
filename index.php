@@ -5,7 +5,7 @@
 Website: Intro to Git
 Page: index.php
 Author: Kevin Robell
-Purpose: This page gives a quick intro to git conceptually. It answers basic questions and list basic concepts.
+Purpose: This page gives a quick intro to git conceptually. It answers basic questions and lists basic concepts.
 
 -->
     <head>
@@ -23,7 +23,7 @@ Purpose: This page gives a quick intro to git conceptually. It answers basic que
         
         <nav>
             <hr />
-            <a id="current-page" href="index.html">Home</a>
+            <a id="current-page" href="index.php">Home</a>
             <a href="starting.html">Starting Out</a>
             <a href="branching.html">Branching</a>
             <a href="remote-server.html">Remote Server</a>
