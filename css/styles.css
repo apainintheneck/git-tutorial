@@ -1,17 +1,21 @@
+/* Center content in the header. */
 header {
     display:flex;
     justify-content: center;
 }
 
+/* Position the logo within the header. */
 #logo {
     margin-top: 25px;
 }
 
+/* Id used to bold the current page in the navegation bar. */
 #current-page {
     font-weight: bold;
 }
 
-nav a {    /* links within "nav" container*/
+/* Links in navegation bar are now purple. */
+nav a {
     padding: 15px;
     padding-bottom: 4px;
     font-size: 1.5em;
@@ -19,20 +23,24 @@ nav a {    /* links within "nav" container*/
     color: #35087c;
 }
 
+/* Underline hovered links in the navegation bar. */
 nav a:hover {
     border-bottom: 2px #35087c solid;
 }
 
+/* Changed the background color to light purple */
 nav, footer {
     background-color: #c3c5ec;
 }
 
+/* Body now has a background color of baby blue, all content is centered, and text uses the font Arial. */
 body {
     background-color: #a1cef5;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* A larger text box with rounded black borders. */
 .big-text-box {
     text-align: left;
     width: 700px;
@@ -44,6 +52,7 @@ body {
     margin-bottom: 5px;
 }
 
+/* A text box with rounded gray borders. */
 .text-box {
     text-align: left;
     width: 650px;
@@ -55,6 +64,7 @@ body {
     margin-bottom: 5px;
 }
 
+/* Made all buttons light green with a grey rounded border.  */
 button {
     background-color: #b1e0d7;
     border-radius: 20px;
@@ -74,6 +84,7 @@ h2 {
     text-align: center;
 }
 
+/* Made text within code tags larger and added a light gray backround. */
 code {
     background-color: #e2e5eb;
     margin-right: 2px;
@@ -82,6 +93,7 @@ code {
     
 }
 
+/* Changed the border color of the references box to purple. */
 #references {
     border-color: #35087c;
 }
