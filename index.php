@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <!--
 
 Website: Intro to Git
@@ -17,7 +17,7 @@ Purpose: This page gives a quick intro to git conceptually. It answers basic que
     <body>
         <header>
             <h1> What is </h1>
-            <img id="logo"src="img/Git-Logo-Black.png" alt="git logo" />
+            <img id="logo" src="img/Git-Logo-Black.png" alt="git logo" />
             <h1> ? </h1>
         </header>
         
