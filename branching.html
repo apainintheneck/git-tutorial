@@ -37,7 +37,7 @@ Purpose: This page teaches the user how make branches, revert commits, and merge
         </div>
         
         <div class="text-box">
-            In this case, we currently have an empty file called mammals.txt. Type <code>git checkout -b &lt;branch name&gt;</code>. This will create a new branch called add-text and checkout or move you to that new branch. You can check the current branch by typing git branch. Move to another branch by typing <code>git checkout &lt;branch name&gt;</code>.
+            In this case, we currently have an empty file called mammals.txt. Type <code>git checkout -b &lt;branch name&gt;</code>. This will create a new branch called add-text and checkout or move you to that new branch. You can check the current branch by typing <code>git branch</code>. Move to another branch by typing <code>git checkout &lt;branch name&gt;</code>.
         </div>
         
         <img src="img/branching_page-console-1.png" />
@@ -49,7 +49,7 @@ Purpose: This page teaches the user how make branches, revert commits, and merge
         <img src="img/branching_page-console-2.png" />
         
         <div class="text-box">
-            Of course, those aren’t names of mammals. We can revert the branch to the previous commit by typing <code>git revert HEAD</code>. The default text editor will pop up to type the commit message. Continue with the default commit message. Revert actually makes a new commit which reverses the changes made in the previous commit instead of deleting the previous commit.
+            Of course, those aren’t names of mammals. We can revert the branch to the previous commit by typing <code>git revert HEAD</code>. The default text editor will pop up to allow you to type the commit message. Continue with the default commit message. Revert actually makes a new commit which reverses the changes made in the previous commit instead of deleting the previous commit.
         </div>
         
         <img src="img/branching_page-console-3.png" />
@@ -73,7 +73,9 @@ Purpose: This page teaches the user how make branches, revert commits, and merge
         <img src="img/branching_page-console-6.png" />
         
         <div class="text-box">
-            Since we have merged in the changes from the add-text branch into the main branch, we can delete the add-text branch by typing <code>git branch -d &lt;branch name&gt;</code>. Note: this command only works when you are NOT using the branch that is being deleted. You can see that the merge worked because the mammals.txt file was blank before the merge and has a list of mammals after the merge.
+            You can see that the merge worked because the mammals.txt file was blank before the merge and has a list of mammals after the merge. 
+            <hr />
+            Since we have merged in the changes from the add-text branch into the main branch, we can delete the add-text branch by typing <code>git branch -d &lt;branch name&gt;</code>. Note: this command only works when you are NOT using the branch that is being deleted.
         </div>
         
         <img src="img/branching_page-console-7.png" />
