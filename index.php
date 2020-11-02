@@ -42,6 +42,8 @@ Purpose: This page gives a quick intro to git conceptually. It answers basic que
             Git was originally developed by the Linux development community in 2005 to help streamline the Linux kernel development process.
         </div>
         
+        <img src="img/index_page-console.png" alt="Console window with the text git..." />
+        
         <div class="text-box">
             <h2>Basic Concepts</h2><hr />
             <ul>
