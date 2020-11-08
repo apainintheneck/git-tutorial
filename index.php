@@ -40,6 +40,8 @@ Purpose: This page gives a quick intro to git conceptually. It answers basic que
 
             <h3>What is the history of git?</h3>
             Git was originally developed by the Linux development community in 2005 to help streamline the Linux kernel development process.
+            
+            <b>Note:</b> This tutorial was created using <code>git version 2.24.3</code>.
         </div>
         
         <div class="text-box">
