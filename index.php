@@ -41,6 +41,8 @@ Purpose: This page gives a quick intro to git conceptually. It answers basic que
             <h3>What is the history of git?</h3>
             Git was originally developed by the Linux development community in 2005 to help streamline the Linux kernel development process.
             
+            <br><br>
+            
             <b>Note:</b> This tutorial was created using <code>git version 2.24.3</code>.
         </div>
         
@@ -63,7 +65,7 @@ Purpose: This page gives a quick intro to git conceptually. It answers basic que
         
         <div class="big-text-box">
             <h2>Three Steps</h2><hr />
-            There are three steps for this tutorial that focus on starting, branching, and working with a remote server.
+            There are three steps for this tutorial that focus on starting out, branching, and working with a remote server.
             
             <ol>
                 <li>The <a href="starting.html">starting out</a> section teaches you how to locally start a project and save your progress.</li>
