@@ -35,7 +35,7 @@ nav, footer {
 
 /* Body now has a background color of baby blue, all content is centered, and text uses the font Arial. */
 body {
-    background-color: #f7f7ff;
+    background-color: #f1f1ff;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -49,8 +49,7 @@ body {
     border: 5px solid black;
     background-color: white;
     margin: 0 auto;
-    margin-bottom: 5px;
-    box-shadow: 5px 5px 10px #888888;
+    margin-bottom: 10px;
 }
 
 /* A text box with rounded gray borders. */
@@ -62,8 +61,7 @@ body {
     border: 5px solid #8c9196;
     background-color: white;
     margin: 0 auto;
-    margin-bottom: 5px;
-    box-shadow: 5px 5px 10px #888888;
+    margin-bottom: 10px;
 }
 
 /* Made all buttons light green with a grey rounded border.  */
@@ -97,4 +95,8 @@ code {
     margin-left: 2px;
     font-size: 1.2em;
     
+}
+
+.text-box, .big-text-box, button {
+    box-shadow: 1px 1px 5px #888888;
 }

@@ -55,7 +55,7 @@ Purpose: This page teaches the user how make branches, revert commits, and merge
         <img src="img/branching_page-console-3.png" alt="Console window showing how to revert a commit using the git revert HEAD command." />
         
         <div class="text-box">
-            There is another more precise way to reverse changes at the file level instead of the commit level. In the add-text branch, create and add a file named another.txt. Now add “alligators, wasps, caterpillars” to the file mammals.txt one more time. If we reverted the commit like last time, the file another.txt would be lost. We don’t want that. Instead, we can revert the contents of mammals.txt to the previous commit by typing <br><code>git restore &lt;file path&gt;</code>. Once again we have removed the non-mammals from the mammals.txt file while the another.txt file remains intact.
+            There is another more precise way to reverse changes at the file level instead of the commit level. In the add-text branch, create and add a file named another.txt. Now add “alligators, wasps, caterpillars” to the file mammals.txt one more time. If we reverted the commit like last time, the file another.txt would be lost. We don’t want that. Instead, we can revert the contents of mammals.txt to the previous commit by typing <code>git restore &lt;file path&gt;</code>. Once again we have removed the non-mammals from the mammals.txt file while the another.txt file remains intact.
         </div>
         
         <img src="img/branching_page-console-4.png" alt="Console window showing how to restore a file using the git restore <file path> command." />
@@ -67,7 +67,7 @@ Purpose: This page teaches the user how make branches, revert commits, and merge
         <img src="img/branching_page-console-5.png" alt="Console window showing how to make another commit." />
         
         <div class="text-box">
-            To add these changes to the main branch we move to that branch and type <br><code>git merge &lt;branch name&gt;</code>. That will merge changes into the checked out branch. In some cases, a merge conflict will appear and this will force you decide on which code to keep based upon the diff. Once you correct the merge conflict you will be able to merge. In this case, there are no conflicts so we can move on.
+            To add these changes to the main branch we move to that branch and type <code>git merge &lt;branch name&gt;</code>. That will merge changes into the checked out branch. In some cases, a merge conflict will appear and this will force you decide on which code to keep based upon the diff. Once you correct the merge conflict you will be able to merge. In this case, there are no conflicts so we can move on.
         </div>
         
         <img src="img/branching_page-console-6.png" alt="Console window showing how to merge branches using the git merger <branch name> command." />
