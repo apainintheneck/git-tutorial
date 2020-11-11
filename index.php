@@ -40,6 +40,8 @@ Purpose: This page gives a quick intro to git conceptually. It answers basic que
 
             <h3>What is the history of git?</h3>
             Git was originally developed by the Linux development community in 2005 to help streamline the Linux kernel development process.
+            
+            <b>Note:</b> This tutorial was created using <code>git version 2.24.3</code>.
         </div>
         
         <div class="text-box">
@@ -59,8 +61,6 @@ Purpose: This page gives a quick intro to git conceptually. It answers basic que
             
         </div>
         
-        <img src="img/index_page-console.png" alt="Console window with the text git..." />
-        
         <div class="big-text-box">
             <h2>Three Steps</h2><hr />
             There are three steps for this tutorial that focus on starting, branching, and working with a remote server.
@@ -70,7 +70,11 @@ Purpose: This page gives a quick intro to git conceptually. It answers basic que
                 <li>The <a href="branching.html">branching</a> section teaches you how to create multiple versions of your project and then combine those versions together.</li>
                 <li>The <a href="remote-server.html">remote server</a> section teaches you how to pull and push code changes to and from a remote server.</li>
             </ol>
+            
+            Open up your console window and let's get started.
         </div>
+        
+        <img src="img/index_page-console.png" alt="Console window with the text git..." /><br>
         
         <button onclick="window.location.href='starting.html'">Start the tutorial &#8594;</button>
         

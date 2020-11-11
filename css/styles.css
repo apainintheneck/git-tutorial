@@ -35,7 +35,7 @@ nav, footer {
 
 /* Body now has a background color of baby blue, all content is centered, and text uses the font Arial. */
 body {
-    background-color: #a1cef5;
+    background-color: #f1f1ff;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -49,7 +49,7 @@ body {
     border: 5px solid black;
     background-color: white;
     margin: 0 auto;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 /* A text box with rounded gray borders. */
@@ -61,17 +61,21 @@ body {
     border: 5px solid #8c9196;
     background-color: white;
     margin: 0 auto;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 /* Made all buttons light green with a grey rounded border.  */
 button {
-    background-color: #b1e0d7;
+    background-color: #bcd4e6;
     border-radius: 20px;
     border: 5px solid #8c9196;
     width: 250px;
     heigh: 100px;
     font-size: 1.5em;
+}
+
+button:hover {
+    background-color: #d6e2e9;
 }
 
 h1 {
@@ -93,7 +97,6 @@ code {
     
 }
 
-/* Changed the border color of the references box to purple. */
-#references {
-    border-color: #35087c;
+.text-box, .big-text-box, button {
+    box-shadow: 1px 1px 5px #888888;
 }
