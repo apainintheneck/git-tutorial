@@ -11,14 +11,15 @@ Purpose: This page gives a quick intro to git conceptually. It answers basic que
     <head>
         <meta charset="utf-8" />
         <title> Intro to Git </title>
+        <link href="css/sta.css" rel="stylesheet" type="text/css" />
         <link href="css/styles.css" rel="stylesheet" type="text/css" />
     </head>
 
     <body>
         <header>
-            <h1> What is </h1>
+            <h1 class="title-txt"> What is </h1>
             <img id="logo" src="img/Git-Logo-Black.png" alt="git logo" />
-            <h1> ? </h1>
+            <h1 class="title-txt"> ? </h1>
         </header>
         
         <nav>
@@ -30,7 +31,7 @@ Purpose: This page gives a quick intro to git conceptually. It answers basic que
             <hr />
         </nav>
         
-        <div class="big-text-box">
+        <div class="bg-txt-box">
             <h2>Introduction</h2><hr />
             <h3>What is git?</h3>
             Git is a type of version control software that makes it easy for multiple people to collaborate on a codebase. 
@@ -46,7 +47,7 @@ Purpose: This page gives a quick intro to git conceptually. It answers basic que
             <b>Note:</b> This tutorial was created using <code>git version 2.24.3</code>.
         </div>
         
-        <div class="text-box">
+        <div class="txt-box">
             <h2>Basic Concepts</h2><hr />
             <ul>
                 <li><b>Cloning:</b> This is copying the entire codebase locally to your computer.</li>
@@ -63,7 +64,7 @@ Purpose: This page gives a quick intro to git conceptually. It answers basic que
             
         </div>
         
-        <div class="big-text-box">
+        <div class="bg-txt-box">
             <h2>Three Steps</h2><hr />
             There are three steps for this tutorial that focus on starting out, branching, and working with a remote server.
             

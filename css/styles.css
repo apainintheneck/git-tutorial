@@ -6,7 +6,7 @@ header {
 
 /* Position the logo within the header. */
 #logo {
-    margin-top: 25px;
+    margin-top: 30px;
 }
 
 /* Id used to bold the current page in the navegation bar. */
@@ -14,89 +14,8 @@ header {
     font-weight: bold;
 }
 
-/* Links in navegation bar are now purple. */
-nav a {
-    padding: 15px;
-    padding-bottom: 4px;
-    font-size: 1.5em;
-    text-decoration: none;
-    color: #35087c;
-}
-
-/* Underline hovered links in the navegation bar. */
-nav a:hover {
-    border-bottom: 2px #35087c solid;
-}
-
-/* Changed the background color to light purple */
-nav, footer {
-    background-color: #c3c5ec;
-}
-
-/* Body now has a background color of baby blue, all content is centered, and text uses the font Arial. */
-body {
-    background-color: #f1f1ff;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-/* A larger text box with rounded black borders. */
-.big-text-box {
-    text-align: left;
-    width: 700px;
-    padding: 15px;
-    border-radius: 20px;
-    border: 5px solid black;
-    background-color: white;
-    margin: 0 auto;
-    margin-bottom: 10px;
-}
-
-/* A text box with rounded gray borders. */
-.text-box {
-    text-align: left;
-    width: 650px;
-    padding: 15px;
-    border-radius: 20px;
-    border: 5px solid #8c9196;
-    background-color: white;
-    margin: 0 auto;
-    margin-bottom: 10px;
-}
-
-/* Made all buttons light green with a grey rounded border.  */
-button {
-    background-color: #bcd4e6;
-    border-radius: 20px;
-    border: 5px solid #8c9196;
-    width: 250px;
-    heigh: 100px;
-    font-size: 1.5em;
-}
-
-button:hover {
-    background-color: #d6e2e9;
-}
-
-h1 {
-    font-size: 5em;
+.title-txt {
+    font-size: 2.9em;
     margin-top: 25px;
     margin-bottom: 0px;
-}
-
-h2 {
-    text-align: center;
-}
-
-/* Made text within code tags larger and added a light gray backround. */
-code {
-    background-color: #e2e5eb;
-    margin-right: 2px;
-    margin-left: 2px;
-    font-size: 1.2em;
-    
-}
-
-.text-box, .big-text-box, button {
-    box-shadow: 1px 1px 5px #888888;
 }
