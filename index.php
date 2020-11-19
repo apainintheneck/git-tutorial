@@ -23,16 +23,16 @@ Purpose: This page gives a quick intro to git conceptually. It answers basic que
         </header>
         
         <nav>
-            <hr />
+            <hr>
             <a id="current-page" href="index.php">Home</a>
             <a href="starting.html">Starting Out</a>
             <a href="branching.html">Branching</a>
             <a href="remote-server.html">Remote Server</a>
-            <hr />
+            <hr>
         </nav>
         
         <div class="bg-txt-box">
-            <h2>Introduction</h2><hr />
+            <h2>Introduction</h2><hr>
             <h3>What is git?</h3>
             Git is a type of version control software that makes it easy for multiple people to collaborate on a codebase. 
 
@@ -48,7 +48,7 @@ Purpose: This page gives a quick intro to git conceptually. It answers basic que
         </div>
         
         <div class="txt-box">
-            <h2>Basic Concepts</h2><hr />
+            <h2>Basic Concepts</h2><hr>
             <ul>
                 <li><b>Cloning:</b> This is copying the entire codebase locally to your computer.</li>
                 <li><b>Origin:</b> The main software release.</li>
@@ -65,7 +65,7 @@ Purpose: This page gives a quick intro to git conceptually. It answers basic que
         </div>
         
         <div class="bg-txt-box">
-            <h2>Three Steps</h2><hr />
+            <h2>Three Steps</h2><hr>
             There are three steps for this tutorial that focus on starting out, branching, and working with a remote server.
             
             <ol>
@@ -82,9 +82,10 @@ Purpose: This page gives a quick intro to git conceptually. It answers basic que
         <button onclick="window.location.href='starting.html'">Start the tutorial &#8594;</button>
         
         <footer>
-            <hr />
+            <hr>
             CST336 Internet Programming. 2020&copy; Robell<br>
             <a href="https://git-scm.com/downloads/logos">Git Logo</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.
+            <hr>
         </footer>
         
     </body>
