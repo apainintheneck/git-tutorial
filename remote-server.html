@@ -15,14 +15,14 @@ Purpose: This page teaches the user how use the clone, pull, and push git comman
         <link href="css/styles.css" rel="stylesheet" type="text/css" />
     </head>
 
-    <body>
-        <header>
+    <body class="stac-body">
+        <header class="stac-header">
             <h1 class="title-txt"> What is </h1>
             <img id="logo" src="img/Git-Logo-Black.png" alt="git logo" />
             <h1 class="title-txt"> ? </h1>
         </header>
         
-        <nav>
+        <nav class="stac-nav">
             <hr>
             <a href="index.php">Home</a>
             <a href="starting.html">Starting Out</a>
@@ -31,31 +31,31 @@ Purpose: This page teaches the user how use the clone, pull, and push git comman
             <hr>
         </nav>
         
-        <div class="bg-txt-box">
+        <div class="stac-box stac-w4">
             <h2> Remote Server </h2>
             <hr>
             Git becomes much more valuable when multiple people can collaborate on the same project. This is accomplished by hosting the repo on a remote server. Users occasionally download new changes from the remote repo and upload new changes to the remote repo. Using git with a remote server or website differs slightly depending upon the installation. There are websites like github, gitlab, and gitbucket which will manage your remote repos for you; git can also be installed directly on private servers. Consult those sites for more information. For this section of the tutorial, I will show you the general commands which will be the same across all platforms. Sadly, you won’t be able to follow along like before.
         </div>
         
-        <div class="txt-box">
-            We often don’t start new projects from scratch. Instead, we are contributing to mature codebases. Git allows us to make a local copy of a codebase by typing <code>git clone &lt;repo url&gt;</code>.
+        <div class="stac-box stac-w3">
+            We often don’t start new projects from scratch. Instead, we are contributing to mature codebases. Git allows us to make a local copy of a codebase by typing <code class="stac-code">git clone &lt;repo url&gt;</code>.
         </div>
         
         <img src="img/remote_page-console-1.png" alt="Console window showing how to clone a repository using the git clone command." />
         
-        <div class="txt-box">
-            Once we have a local clone of the repo, it will function like the repo we created at the beginning of the tutorial. The only difference is that other users can make changes to the remote repo too. To download the newest changes from the remote repo type <code>git pull</code>. This is a combination of the commands <code>git fetch</code>(which grabs the newest changes from the remote repo) and <code>git merge</code>(which tries to merge those changes into your current branch. It may result in a merge conflict which you will have to solve by looking at the diff.
+        <div class="stac-box stac-w3">
+            Once we have a local clone of the repo, it will function like the repo we created at the beginning of the tutorial. The only difference is that other users can make changes to the remote repo too. To download the newest changes from the remote repo type <code class="stac-code">git pull</code>. This is a combination of the commands <code class="stac-code">git fetch</code>(which grabs the newest changes from the remote repo) and <code class="stac-code">git merge</code>(which tries to merge those changes into your current branch. It may result in a merge conflict which you will have to solve by looking at the diff.
         </div>
         
         <img src="img/remote_page-console-2.png" alt="Console window showing how to pull from a remote repository using the git pull command." />
         
-        <div class="txt-box">
-            You can make changes to the local repo as shown earlier in this tutorial. Add your changed files and make a commit. To add these changes to the remote repo type <code>git push</code>. It may also result in merge conflicts that you will have to resolve.
+        <div class="stac-box stac-w3">
+            You can make changes to the local repo as shown earlier in this tutorial. Add your changed files and make a commit. To add these changes to the remote repo type <code class="stac-code">git push</code>. It may also result in merge conflicts that you will have to resolve.
         </div>
         
         <img src="img/remote_page-console-3.png" alt="Console window showing how to push to a remote repository using the git push command." />
         
-        <div class="bg-txt-box">
+        <div class="stac-box stac-w4">
             <h2> Ending Tips </h2>
             <hr>
             You’ve made it to the end of the tutorial. You now know enough about git to be dangerous. Here are two basic tips for how git should be used.
@@ -66,7 +66,7 @@ Purpose: This page teaches the user how use the clone, pull, and push git comman
             Be sure to review this tutorial if you’re unsure about anything or seek out other resources. I’ve included some of my favorite resources below that I consulted while building this website.
         </div>
         
-        <div id="references" class="txt-box">
+        <div id="references" class="stac-box stac-w3">
             <h2> Additional Resources </h2>
             <hr>
             <ul>
@@ -76,7 +76,7 @@ Purpose: This page teaches the user how use the clone, pull, and push git comman
             </ul>
         </div>
         
-        <footer>
+        <footer class="stac-footer">
             <hr>
             CST336 Internet Programming. 2020&copy; Robell<br>
             <a href="https://git-scm.com/downloads/logos">Git Logo</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.
