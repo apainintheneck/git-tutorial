@@ -1,7 +1,5 @@
 /* Body now has a background color of light purple, all content is centered, and text uses the font Arial. */
 .stac-body {
-    margin-right: 0px;
-    margin-left: 0px;
     background-color: #f1f1ff;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
@@ -36,6 +34,12 @@
 /* Changed the background color to light purple */
 .stac-nav, .stac-footer {
     background-color: #c3c5ec;
+    max-width: 850px;
+    margin: auto;
+    padding: 15px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    margin-top: 15px;
 }
 
 .stac-box {
@@ -84,7 +88,7 @@
 }
 
 /*Add small shadow to everything. */
-.stac-box, .stac-img-shadow, .stac-btn {
+.stac-box, .stac-img-shadow, .stac-btn, .stac-nav, .stac-footer {
     box-shadow: 2px 2px 5px #888888;
 }
 

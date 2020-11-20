@@ -23,12 +23,10 @@ Purpose: This page gives a quick intro to git conceptually. It answers basic que
         </header>
         
         <nav class="stac-nav">
-            <hr>
             <a id="current-page" href="index.php">Home</a>
             <a href="starting.html">Starting Out</a>
             <a href="branching.html">Branching</a>
             <a href="remote-server.html">Remote Server</a>
-            <hr>
         </nav>
         
         <div class="stac-box stac-w4">
@@ -82,10 +80,8 @@ Purpose: This page gives a quick intro to git conceptually. It answers basic que
         <button class="stac-btn" onclick="window.location.href='starting.html'">Start the tutorial &#8594;</button>
         
         <footer class="stac-footer">
-            <hr>
             CST336 Internet Programming. 2020&copy; Robell<br>
             <a href="https://git-scm.com/downloads/logos">Git Logo</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.
-            <hr>
         </footer>
         
     </body>
