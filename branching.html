@@ -36,7 +36,7 @@ Purpose: This page teaches the user how make branches, revert commits, and merge
         </div>
         
         <div class="stac-box stac-w3">
-            In this case, we currently have an empty file called mammals.txt. Type <code class="stac-code">git checkout -b &lt;branch name&gt;</code>. This will create a new branch called add-text and checkout or move you to that new branch. You can check the current branch by typing <code class="stac-code">git branch</code>. Move to another branch by typing <code class="stac-code">git checkout &lt;branch name&gt;</code>.
+            In this case, we currently have an empty file called mammals.txt. Type <code>git checkout -b &lt;branch name&gt;</code>. This will create a new branch called add-text and checkout or move you to that new branch. You can check the current branch by typing <code>git branch</code>. Move to another branch by typing <code>git checkout &lt;branch name&gt;</code>.
         </div>
         
         <img src="img/branching_page-console-1.png" alt="Console window showing how to create a new branch using the git checkout -b <branch name> command." />
@@ -48,13 +48,13 @@ Purpose: This page teaches the user how make branches, revert commits, and merge
         <img src="img/branching_page-console-2.png" alt="Console window showing how to make a commit to the new branch." />
         
         <div class="stac-box stac-w3">
-            Of course, those aren’t names of mammals. We can revert the branch to the previous commit by typing <code class="stac-code">git revert HEAD</code>. The default text editor will pop up to allow you to type the commit message. Continue with the default commit message. Revert actually makes a new commit which reverses the changes made in the previous commit instead of deleting the previous commit.
+            Of course, those aren’t names of mammals. We can revert the branch to the previous commit by typing <code>git revert HEAD</code>. The default text editor will pop up to allow you to type the commit message. Continue with the default commit message. Revert actually makes a new commit which reverses the changes made in the previous commit instead of deleting the previous commit.
         </div>
         
         <img src="img/branching_page-console-3.png" alt="Console window showing how to revert a commit using the git revert HEAD command." />
         
         <div class="stac-box stac-w3">
-            There is another more precise way to reverse changes at the file level instead of the commit level. In the add-text branch, create and add a file named another.txt. Now add “alligators, wasps, caterpillars” to the file mammals.txt one more time. If we reverted the commit like last time, the file another.txt would be lost. We don’t want that. Instead, we can revert the contents of mammals.txt to the previous commit by typing <code class="stac-code">git restore &lt;file path&gt;</code>. Once again we have removed the non-mammals from the mammals.txt file while the another.txt file remains intact.
+            There is another more precise way to reverse changes at the file level instead of the commit level. In the add-text branch, create and add a file named another.txt. Now add “alligators, wasps, caterpillars” to the file mammals.txt one more time. If we reverted the commit like last time, the file another.txt would be lost. We don’t want that. Instead, we can revert the contents of mammals.txt to the previous commit by typing <code>git restore &lt;file path&gt;</code>. Once again we have removed the non-mammals from the mammals.txt file while the another.txt file remains intact.
         </div>
         
         <img src="img/branching_page-console-4.png" alt="Console window showing how to restore a file using the git restore <file path> command." />
@@ -66,7 +66,7 @@ Purpose: This page teaches the user how make branches, revert commits, and merge
         <img src="img/branching_page-console-5.png" alt="Console window showing how to make another commit." />
         
         <div class="stac-box stac-w3">
-            To add these changes to the main branch we move to that branch and type <code class="stac-code">git merge &lt;branch name&gt;</code>. That will merge changes into the checked out branch. In some cases, a merge conflict will appear and this will force you decide on which code to keep based upon the diff. Once you correct the merge conflict you will be able to merge. In this case, there are no conflicts so we can move on.
+            To add these changes to the main branch we move to that branch and type <code>git merge &lt;branch name&gt;</code>. That will merge changes into the checked out branch. In some cases, a merge conflict will appear and this will force you decide on which code to keep based upon the diff. Once you correct the merge conflict you will be able to merge. In this case, there are no conflicts so we can move on.
         </div>
         
         <img src="img/branching_page-console-6.png" alt="Console window showing how to merge branches using the git merger <branch name> command." />
@@ -74,7 +74,7 @@ Purpose: This page teaches the user how make branches, revert commits, and merge
         <div class="stac-box stac-w3">
             You can see that the merge worked because the mammals.txt file was blank before the merge and has a list of mammals after the merge. 
             <hr>
-            Since we have merged in the changes from the add-text branch into the main branch, we can delete the add-text branch by typing <code class="stac-code">git branch -d &lt;branch name&gt;</code>. 
+            Since we have merged in the changes from the add-text branch into the main branch, we can delete the add-text branch by typing <code>git branch -d &lt;branch name&gt;</code>. 
             
             <br><br>
             
