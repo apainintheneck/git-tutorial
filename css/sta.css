@@ -5,10 +5,10 @@
     background-color: var(--body-bg-color);
     text-align: center;
     font-family: var(--font);
+    color: var(--font-color);
 }
 
 .stac-header {
-    text-align: center;
     font-size: 2em;
     margin-top: 25px;
     margin-bottom: 15px;
@@ -54,11 +54,12 @@
     margin-top: var(--box-margin);
 }
 
-.stac-box h1, .stac-box h2 {
+.stac-box > h1, .stac-box > h2 {
     text-align: center;
 }
 
 .stac-img {
+    margin: auto;
     margin-bottom: var(--img-margin);
     margin-top: var(--img-margin);
     border-radius: var(--img-radius);
@@ -68,7 +69,7 @@
 .stac-btn {
     background-color: var(--btn-bg-color);
     border-radius: 20px;
-    max-width: 300px;
+    max-width: 400px;
     font-size: 1.3em;
     padding: 3px;
     padding-right: 10px;
