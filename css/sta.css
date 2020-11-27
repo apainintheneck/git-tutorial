@@ -2,7 +2,7 @@
 
 /* Body now has a background color of light purple, all content is centered, and text uses the font Arial. */
 .stac-body {
-    background-color: var(--body-bg-color);
+    background-color: var(--body-bg-color, #f4f3ee);
     text-align: center;
     font-family: var(--font);
     color: var(--font-color);
@@ -25,17 +25,18 @@
 
 /* Underline hovered links in the navegation bar. */
 .stac-nav a:hover {
-    border-bottom: 2px var(--nav-txt-color) solid;
+    border-bottom: 2px var(--nav-txt-color, black) solid;
 }
 
 .stac-footer {
     margin-bottom: 20px;
     margin-top: 20px;
+    color: var(--footer-txt-color);
 }
 
 /* Changed the background color to light purple */
 .stac-nav, .stac-footer {
-    background-color: var(--nf-bg-color);
+    background-color: var(--nf-bg-color, white);
     max-width: 850px;
     margin: auto;
     padding: 15px;
@@ -47,11 +48,11 @@
 .stac-box {
     text-align: left;
     padding: 15px;
-    border-radius: var(--box-radius);
+    border-radius: var(--border-radius, 15px);
     background-color: white;
     margin: auto;
-    margin-bottom: var(--box-margin);
-    margin-top: var(--box-margin);
+    margin-bottom: var(--box-margin, 10px);
+    margin-top: var(--box-margin, 10px);
 }
 
 .stac-box > h1, .stac-box > h2 {
@@ -62,12 +63,13 @@
     margin: auto;
     margin-bottom: var(--img-margin);
     margin-top: var(--img-margin);
-    border-radius: var(--img-radius);
+    border-radius: var(--border-radius);
 }
 
 /* Made all buttons light green with a grey rounded border.  */
 .stac-btn {
-    background-color: var(--btn-bg-color);
+    background-color: var(--btn-bg-color, #ced4da);
+    color: var(--btn-txt-color);
     border-radius: 20px;
     max-width: 400px;
     font-size: 1.3em;
@@ -85,7 +87,8 @@
 
 /* Made text within code tags larger and added a light gray backround. */
 .stac-box code {
-    background-color: var(--code-bg-color);
+    background-color: var(--code-bg-color, #e2e5eb);
+    color: var(--code-txt-color);
     margin-right: 2px;
     margin-left: 2px;
     font-size: 1.2em;
