@@ -15,65 +15,63 @@ Purpose: This page teaches the user how make branches, revert commits, and merge
         <link href="css/styles.css" rel="stylesheet" type="text/css" />
     </head>
 
-    <body>
-        <header>
+    <body class="stac-body">
+        <header class="stac-header">
             <h1 class="title-txt"> What is </h1>
             <img id="logo" src="img/Git-Logo-Black.png" alt="git logo" />
             <h1 class="title-txt"> ? </h1>
         </header>
         
-        <nav>
-            <hr>
+        <nav class="stac-nav">
             <a href="index.html">Home</a>
             <a href="starting.html">Starting Out</a>
             <a id="current-page" href="branching.html">Branching</a>
             <a href="remote-server.html">Remote Server</a>
-            <hr>
         </nav>
         
-        <div class="bg-txt-box">
+        <div class="stac-box stac-w4">
             <h2> Branching </h2>
             <hr>
             Branching allows you to make a copy of your project that you can change without interfering with the state of your original project. You are encouraged to make a new branch before making changes to a codebase. 
         </div>
         
-        <div class="txt-box">
+        <div class="stac-box stac-w3">
             In this case, we currently have an empty file called mammals.txt. Type <code>git checkout -b &lt;branch name&gt;</code>. This will create a new branch called add-text and checkout or move you to that new branch. You can check the current branch by typing <code>git branch</code>. Move to another branch by typing <code>git checkout &lt;branch name&gt;</code>.
         </div>
         
         <img src="img/branching_page-console-1.png" alt="Console window showing how to create a new branch using the git checkout -b <branch name> command." />
         
-        <div class="txt-box">
+        <div class="stac-box stac-w3">
             Now let’s add some text to mammals.txt in the add-text branch. Add “alligators, wasps, caterpillars” and make a commit. 
         </div>
         
         <img src="img/branching_page-console-2.png" alt="Console window showing how to make a commit to the new branch." />
         
-        <div class="txt-box">
+        <div class="stac-box stac-w3">
             Of course, those aren’t names of mammals. We can revert the branch to the previous commit by typing <code>git revert HEAD</code>. The default text editor will pop up to allow you to type the commit message. Continue with the default commit message. Revert actually makes a new commit which reverses the changes made in the previous commit instead of deleting the previous commit.
         </div>
         
         <img src="img/branching_page-console-3.png" alt="Console window showing how to revert a commit using the git revert HEAD command." />
         
-        <div class="txt-box">
+        <div class="stac-box stac-w3">
             There is another more precise way to reverse changes at the file level instead of the commit level. In the add-text branch, create and add a file named another.txt. Now add “alligators, wasps, caterpillars” to the file mammals.txt one more time. If we reverted the commit like last time, the file another.txt would be lost. We don’t want that. Instead, we can revert the contents of mammals.txt to the previous commit by typing <code>git restore &lt;file path&gt;</code>. Once again we have removed the non-mammals from the mammals.txt file while the another.txt file remains intact.
         </div>
         
         <img src="img/branching_page-console-4.png" alt="Console window showing how to restore a file using the git restore <file path> command." />
         
-        <div class="txt-box">
+        <div class="stac-box stac-w3">
             We’re back where we started. Let’s add “tiger, lion, bear” to mammals.txt and make a commit. 
         </div>
         
         <img src="img/branching_page-console-5.png" alt="Console window showing how to make another commit." />
         
-        <div class="txt-box">
+        <div class="stac-box stac-w3">
             To add these changes to the main branch we move to that branch and type <code>git merge &lt;branch name&gt;</code>. That will merge changes into the checked out branch. In some cases, a merge conflict will appear and this will force you decide on which code to keep based upon the diff. Once you correct the merge conflict you will be able to merge. In this case, there are no conflicts so we can move on.
         </div>
         
         <img src="img/branching_page-console-6.png" alt="Console window showing how to merge branches using the git merger <branch name> command." />
         
-        <div class="txt-box">
+        <div class="stac-box stac-w3">
             You can see that the merge worked because the mammals.txt file was blank before the merge and has a list of mammals after the merge. 
             <hr>
             Since we have merged in the changes from the add-text branch into the main branch, we can delete the add-text branch by typing <code>git branch -d &lt;branch name&gt;</code>. 
@@ -85,17 +83,15 @@ Purpose: This page teaches the user how make branches, revert commits, and merge
         
         <img src="img/branching_page-console-7.png" alt="Console window showing how to delete a branch by using the git branch -d <branch name> command." />
         
-        <div class="bg-txt-box">
+        <div class="stac-box stac-w4">
             Now that you know how to branch and merge we will move on to using git with remote servers.
         </div>
         
-        <button onclick="window.location.href='remote-server.html'">Continue learning &#8594;</button>
+        <button class="stac-btn" onclick="window.location.href='remote-server.html'">Continue learning &#8594;</button>
         
-        <footer>
-            <hr>
+        <footer class="stac-footer">
             CST336 Internet Programming. 2020&copy; Robell<br>
             <a href="https://git-scm.com/downloads/logos">Git Logo</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.
-            <hr>
         </footer>
         
     </body>
