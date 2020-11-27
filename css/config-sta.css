@@ -2,7 +2,6 @@
     /*.stac-body*/
     --body-bg-color: #f1f1ff;
     --font: Arial, Helvetica, sans-serif;
-    /*--font-color: ;*/
     
     /* .stac-nav, .stac-footer */
     --nf-bg-color: #c3c5ec;
@@ -10,23 +9,9 @@
     /* .stac-nav */
     --nav-txt-color: #35087c;
     
-    /* .stac-footer */
-    /*--footer-txt-color: ;*/
-    
     /* .stac-box code */
     --code-bg-color: #e2e5eb;
-    /*--code-txt-color: ;*/
     
     /* .stac-btn */
     --btn-bg-color: #bcd4e6;
-    /*--btn-txt-color: ;*/
-    
-    /* .stac-box */
-    --box-margin: 10px; /*top and bottom margin*/
-    
-    /* .stac-img */
-    --img-margin: 20px; /*top and bottom margin*/
-    
-    /* .stac-box, .stac-img, .stac-nav, .stac-footer */
-    --border-radius: 15px; /*rounded corners*/
 }

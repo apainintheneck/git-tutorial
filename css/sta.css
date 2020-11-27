@@ -2,7 +2,7 @@
 
 /* Body now has a background color of light purple, all content is centered, and text uses the font Arial. */
 .stac-body {
-    background-color: var(--body-bg-color, #f4f3ee);
+    background-color: var(--body-bg-color);
     text-align: center;
     font-family: var(--font);
     color: var(--font-color);
@@ -25,7 +25,7 @@
 
 /* Underline hovered links in the navegation bar. */
 .stac-nav a:hover {
-    border-bottom: 2px var(--nav-txt-color, black) solid;
+    border-bottom: 2px var(--nav-txt-color) solid;
 }
 
 .stac-footer {
@@ -36,7 +36,7 @@
 
 /* Changed the background color to light purple */
 .stac-nav, .stac-footer {
-    background-color: var(--nf-bg-color, white);
+    background-color: var(--nf-bg-color);
     max-width: 850px;
     margin: auto;
     padding: 15px;
@@ -68,7 +68,7 @@
 
 /* Made all buttons light green with a grey rounded border.  */
 .stac-btn {
-    background-color: var(--btn-bg-color, #ced4da);
+    background-color: var(--btn-bg-color);
     color: var(--btn-txt-color);
     border-radius: 20px;
     max-width: 400px;
@@ -80,14 +80,14 @@
 }
 
 .stac-btn:hover {
-    opacity: 0.9;
-    border-right: 2px black solid;
-    border-left: 2px black solid;
+    border-right: 3px black solid;
+    border-left: 3px black solid;
+    font-weight: bold;
 }
 
 /* Made text within code tags larger and added a light gray backround. */
 .stac-box code {
-    background-color: var(--code-bg-color, #e2e5eb);
+    background-color: var(--code-bg-color);
     color: var(--code-txt-color);
     margin-right: 2px;
     margin-left: 2px;
