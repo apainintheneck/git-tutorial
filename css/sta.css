@@ -1,121 +1,196 @@
 @import "config-sta.css";
+/*
+Project: sta.css CSS Framework
+Github: https://github.com/apainintheneck/sta.css
+Description: A minimalist CSS framework for static websites.
+*/
 
-/* Body now has a background color of light purple, all content is centered, and text uses the font Arial. */
-.stac-body {
-    background-color: var(--body-bg-color);
-    text-align: center;
-    font-family: var(--font);
-    color: var(--font-color);
+/* Add small shadow to everything. */
+.box, .btn, .nav, .footer, .media, .code-block {
+    box-shadow: 1px 1px 4px #888;
 }
 
-.stac-header {
-    font-size: 2em;
+html {
+  scroll-behavior: smooth;
+}
+
+/* body */
+.body {
+    background-color: var(--body-bg-color, #FFEFD5);
+    background-image: var(--body-bg-img);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    font-family: var(--font, sans-serif);
+    color: var(--txt-color);
+}
+.body > hr {
+    width: 50%;
+    max-width: 775px;
+}
+
+/* header */
+.header {
     margin-top: 25px;
     margin-bottom: 15px;
+    font-size: 2em;
+    color: var(--header-txt-color);
 }
 
-/* Links in navegation bar are now purple. */
-.stac-nav a {
+/* navbar */
+.nav a {
     padding: 15px;
     padding-bottom: 4px;
     font-size: 1.5em;
     text-decoration: none;
     color: var(--nav-txt-color);
 }
-
-/* Underline hovered links in the navegation bar. */
-.stac-nav a:hover {
+.nav a:hover {
     border-bottom: 2px var(--nav-txt-color) solid;
 }
-
-.stac-footer {
-    margin-bottom: 20px;
-    margin-top: 20px;
-    color: var(--footer-txt-color);
-}
-
-/* Changed the background color to light purple */
-.stac-nav, .stac-footer {
-    background-color: var(--nf-bg-color);
-    max-width: 850px;
-    margin: auto;
-    padding: 15px;
-    border-radius: 15px;
-    margin-bottom: 15px;
-    margin-top: 15px;
-}
-
-.stac-box {
-    text-align: left;
-    padding: 15px;
-    border-radius: var(--border-radius, 15px);
-    background-color: white;
-    margin: auto;
-    margin-bottom: var(--box-margin, 10px);
-    margin-top: var(--box-margin, 10px);
-}
-
-.stac-box > h1, .stac-box > h2 {
-    text-align: center;
-}
-
-.stac-img {
-    margin: auto;
-    margin-bottom: var(--img-margin);
-    margin-top: var(--img-margin);
-    border-radius: var(--border-radius);
-}
-
-/* Made all buttons light green with a grey rounded border.  */
-.stac-btn {
-    background-color: var(--btn-bg-color);
-    color: var(--btn-txt-color);
-    border-radius: 20px;
-    max-width: 400px;
-    font-size: 1.3em;
-    padding: 3px;
-    padding-right: 10px;
-    padding-left: 10px;
-    border: none;
-}
-
-.stac-btn:hover {
-    border-right: 3px black solid;
-    border-left: 3px black solid;
+.nav #current-page {
     font-weight: bold;
 }
 
-/* Made text within code tags larger and added a light gray backround. */
-.stac-box code {
-    background-color: var(--code-bg-color);
+/* footer */
+.footer {
+    color: var(--footer-txt-color);
+}
+
+/* navbar and footer */
+.nav, .footer {
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-radius: var(--border-radius, 15px);
+    max-width: var(--nf-width, 850px);
+    padding: 15px;
+    background-color: var(--nf-bg-color, #F08080);
+}
+
+/* media */
+.media {
+    margin: auto;
+    margin-bottom: var(--media-margin, 10px);
+    margin-top: var(--media-margin, 10px);
+    border-radius: var(--border-radius, 15px);
+}
+.media.clear {
+    box-shadow: none;
+    border-radius: none;
+}
+
+/* box */
+.box {
+    margin: auto;
+    margin-bottom: var(--box-margin, 10px);
+    margin-top: var(--box-margin, 10px);
+    border-radius: var(--border-radius, 15px);
+    box-sizing: border-box;
+    padding: var(--box-padding, 20px);
+    background-color: var(--box-bg-color, white);
+    text-align: left;
+    color: var(--box-txt-color);
+}
+.box.clear {
+    box-shadow: none;
+    background-color: rgba(0, 0, 0, 0);
+    color: var(--clrbox-txt-color);
+}
+.box > h1, .box > h2{
+    text-align: var(--box-title-align, center);
+}
+.box > .media, .box > .box {
+    max-width: 100%;
+}
+
+/* code */
+.box code, .code {
+    border-radius: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+    background-color: var(--code-bg-color, #E0E0E0);
+    font-size: 1.1em;
+    font-family: monospace;
     color: var(--code-txt-color);
-    margin-right: 2px;
-    margin-left: 2px;
-    font-size: 1.2em;
+}
+.box.code {
+    padding: 5px;
+    padding-left: 15px;
+    white-space: pre-wrap;
 }
 
-/*Add small shadow to everything. */
-.stac-box, .stac-img-shadow, .stac-btn, .stac-nav, .stac-footer {
-    box-shadow: 2px 2px 5px #888888;
+/* btn */
+.btn {
+    display: inline-block;;
+    margin: 4px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    background-color: var(--btn-bg-color, lightgray);
+    font-size: 1.15em;
+    color: var(--btn-txt-color);
+}
+.btn:link {
+    text-decoration: none;
+}
+.btn:hover {
+    cursor: pointer;
+}
+.btn.border { /* buttons with borders */
+    transition: border-color 1s;
+    border: 1px var(--btn-bg-color, lightgray) solid;
+    border-right: 3px var(--btn-bg-color, lightgray) solid;
+    border-left: 3px var(--btn-bg-color, lightgray) solid;
+}
+.btn.border:hover {
+    border-color: black;
+}
+.btn.lines {
+    transition: border-right 1s, border-left 1s, background-color 1s;
+    border-right: 3px var(--btn-bg-color, lightgray) solid;
+    border-left: 3px var(--btn-bg-color, lightgray) solid;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+.btn.lines:hover {
+    border-right: 3px black solid;
+    border-left: 3px black solid;
+}
+.btn.dark, .btn.light { /* borderless buttons */
+    padding: 6px;
+    padding-right: 13px;
+    padding-left: 13px;
+}
+.btn.light {
+    transition: background-color 1s;
+}
+.btn.light:hover {
+    background-color: rgba(255, 250, 241, 0.7);
+}
+.btn.dark {
+    transition: background-color 1s, color 0.5s;
+}
+.btn.dark:hover {
+    background-color: rgba(4, 10, 24, 0.7);
+    color: #F5F5E9;
 }
 
-/*stac item width*/
-.stac-w5 {
-    max-width: 775px;
-}
+/* Width */
+.w0 { max-width: var(--width-floor, 400px); }
+.w1 { max-width: calc(var(--width-floor, 400px) + var(--width-step, 75px) * 1); }
+.w2 { max-width: calc(var(--width-floor, 400px) + var(--width-step, 75px) * 2); }
+.w3 { max-width: calc(var(--width-floor, 400px) + var(--width-step, 75px) * 3); }
+.w4 { max-width: calc(var(--width-floor, 400px) + var(--width-step, 75px) * 4); }
+.w5 { max-width: calc(var(--width-floor, 400px) + var(--width-step, 75px) * 5); }
+.wfull { max-width: 100%; }
+.wmax { width: 100%; }
 
-.stac-w4 {
-    max-width: 700px;
-}
-
-.stac-w3 {
-    max-width: 625px;
-}
-
-.stac-w2 {
-    max-width: 550px;
-}
-
-.stac-w1 {
-    max-width: 475px;
-}
+/* Text Alignment */
+.txt-left { text-align: left; }
+.txt-center { text-align: center; }
+.txt-right { text-align: right; }
+.txt-justify { text-align: justify; }

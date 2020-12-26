@@ -1,17 +1,19 @@
+/*
+sta.css - basic purple theme
+Created by: Kevin Robell <apainintheneck@gmail.com> 2020
+Github: https://github.com/apainintheneck/sta.css
+*/
 :root {
-    /*.stac-body*/
+    /* .body */
     --body-bg-color: #f1f1ff;
     --font: Arial, Helvetica, sans-serif;
-    
-    /* .stac-nav, .stac-footer */
+
+    /* .nav, .footer */
     --nf-bg-color: #c3c5ec;
-    
-    /* .stac-nav */
+
+    /* .nav */
     --nav-txt-color: #35087c;
-    
-    /* .stac-box code */
-    --code-bg-color: #e2e5eb;
-    
-    /* .stac-btn */
+
+    /* .btn */
     --btn-bg-color: #bcd4e6;
 }
